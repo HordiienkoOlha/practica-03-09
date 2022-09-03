@@ -21,6 +21,9 @@ app.use(
   })
 );
 app.use("/api/v1", require("./routes/filmsRoutes"));
+
+app.use("/users", require("./routes/usersRoutes"));
+
 app.use(require("./middlewares/badUrlError"));
 app.use(require("./middlewares/errorHandler"));
 
